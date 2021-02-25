@@ -1,38 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CheatSheet</title>
 </head>
+
 <body>
 
 
     <!-- Esta estructura es para hacer comentarios-->
 
-<!-- Enlances internos y externos--> 
+    <!-- Enlances internos y externos-->
 
-<a href="https://www.google.com">Enlace Google</a> <br>
-<a href="folder/blog.html">Blog</a><br>
-<!--Para que te lo abra en una nueva pestaña-->
-<a href="https://www.google.com" target="_blank">Enlace Google otra pestaña</a>
+    <a href="https://www.google.com">Enlace Google</a> <br>
+    <a href="folder/blog.html">Blog</a><br>
+    <!--Para que te lo abra en una nueva pestaña-->
+    <a href="https://www.google.com" target="_blank">Enlace Google otra pestaña</a>
 
-<!--Línea en blanco-->
+    <!--Línea en blanco-->
+    <br>
+    <!--Línea separadora-->
+    <hr>
+    <!--Títulos/Headings-->
+    <h1>Título 1, H1</h1>
+    <h2>Titulo 2, H2</h2>
+    <h3>Título 3, H3</h3>
+    <h4>Título 4, H4</h4>
+    <h5>Título 5, H5</h5>
+    <h6>Título 6, H6</h6>
+    <hr>
+    <p>Párrafo, p. Esto es un párrafo. <br>
+        Lorem
+        ipsum <b>sit, amet
+            consectetur</b> adipisicing elit. Ut deserunt sequi quasi. Veritatis labore libero
+        nostrum <strong>sit, a met consectetur</strong> corporis non nemo necessitatibus, maxime sint sed quia voluptas,
+        consequatur vero
+
+        molestias
+        doloribus?
+
+        <!-- Su usa B o Strong para poner negritas, los motores de busqueda hacen mas fuertes los strong-->
+    </p>
+
+    <!--Con el pre, dejamos un formato predefinido, asi se refleja lo que realmente escribes en la consola-->
+    <pre>Párrafo, p. Esto es un párrafo. <br>
+        Lorem 
+              ipsum <b>sit, amet 
+            consectetur</b> adipisicing elit. Ut deserunt sequi quasi. Veritatis labore libero
+        nostrum <strong>sit, a       met consectetur</strong> corporis non nemo necessitatibus, maxime sint sed quia voluptas,
+        consequatur vero 
+        
+        molestias
+        doloribus?</pre>
+    <!--Italica con <em></em> tachado con <s></s>-->
+    <p>Lorem ipsum <em>odlor </em>odlor <s>sit amet</s>, consectetur adipisicing elit. Qui quibusdam quo debitis ad
+        necessitatibus sapiente.
+    </p>
+
+    <!--span sirve como marcador o identificador para despues con css darle formato, por ejemplo-->
+    <p>
+        <span class="Ingredients">Lorem ipsum </span>dolor sit amet, consectetur adipisicing elit. Culpa, molestias
+        adipisci. Veniam corrupti perferendis
+        maiores, saepe sint laborum odit ab.
+    </p>
+
+    <p>
+        La molécula preferida casi cualquier desarrollador es
+        la C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sup>2</sup> tambien conocida
+        como cafeíns
+    </p>
+
+    <p>
+        El teorema de pitagoras se conoce por la ecuacion de:</p>
+    <p>
+        <var>a</var><sup>2</sup> + <var>b</var><sup>2</sup> = <var>c</var><sup>2</sup>
+    </p>
+
+    <p>
+        el dia de comienzo fue el <time datatime="2021-02-01">1 de febrero de 2021</time>
+        Las clases del BootCamp comienzan a las <time datetime="09:30">09:30</time>
+    </p>
+    <br>
+    <hr> <br>
+    <h2>Contenedores, Containers</h2>
+    <nav>
+        <!--la abreviatura nav>a*3{enlace $} nos devuelve lo de abajo con los índices-->
+        Barra de navegación, suele estar en la parte superior de la pagina <br>
+        <nav><a href="">ENLACE 1</a><a href="">ENLACE 2</a><a href="">ENLACE 3</a></nav>
+        <a href="">Enlace 1</a><a href="">Enlace 2</a><a href="">Enlace 3</a>
+
+        <a href=""></a><a href=""></a><a href=""></a>
+    </nav>
+    <hr>
+    <br>
+    <section>
+        <strong>Con section</strong> , Se engloba contenido que tenga relación entre sí
+        <article>
+            <h1>titulo del articulo</h1>
+            <p>contenido del articulo</p>
+        </article>
+        <a href="enlace">Leer más</a>
+
+    </section>
+    <hr>
+    <br>
+    <aside>
+        <p><strong>Aside</strong> Menús laterales de las páginas</p>
+
+    </aside>
+    <hr>
+    <Footer>
+        <p><strong>Footer</strong> es el pie de pagina</p>
+        <address>
+            29002 Málaga
+        </address>
+    </Footer>
+    <hr>
+    <br>
+
+    <div>
+        <strong>DIV</strong> es el contenedor genérico y más habitual
+    </div>
+
+    <!--Listas / List-->
+
+    <h2>Listas/List</h2>
+
+    con UL se hacen listas desordenadas
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2
+            <ol>
+                <li>Elemento</li>
+                <li>Elemento</li>
+            </ol>
+        </li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+    </ul>
+    <!--Abreviatura ul>li*5{Elemento $}-->
+
+    Con OL salen listas ordenadas con el numero de Elemento
+    <ol star="500">
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+    </ol>
+
+    poniendo ol start="500" empezaría la lista en 500
+    Dentor de listas se pueden meter mas listas
+    <hr>
+    <br>
+    <h2>Tablas/tables</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>examplee@example.com</td>
+                <td>47</td>
+
+            </tr>
+            <tr>
+                <td>Jane Fonda</td>
+                <td>example@example.com</td>
+                <td></td>
+                <!--Se puede dejar un dato vacio para usar despues-->
+            </tr>
+            <tr>
+                <td>James Brown</td>
+                <td>exam@example.com</td>
+                <td>44</td>
+
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Edad</th>
+            </tr>
+        </tfoot>
+    </table>
 <br>
-<!--Línea separadora-->
 <hr>
-<!--Títulos/Headings-->
-<h1>Título 1, H1</h1>
-<h2>Titulo 2, H2</h2>
-<h3>Título 3, H3</h3>
-<h4>Título 4, H4</h4>
-<h5>Título 5, H5</h5>
-<h6>Título 6, H6</h6>
-<hr>
-<p>Párrafo, p</p>
+<br>
+<h2>Formularios/ Forms</h2>
+
+<form action="" method="get">
+    <label for="nameInput">Nombre:</label>
+    <input type="text" id="nameInput" name="userName" placeholder="Introduce tu nombre">
+</form>
 
 
-
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
+
 </html>
