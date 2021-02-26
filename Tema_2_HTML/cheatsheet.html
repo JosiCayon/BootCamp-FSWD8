@@ -197,11 +197,105 @@
 <hr>
 <br>
 <h2>Formularios/ Forms</h2>
+    <!-- Formularios / Forms -->
 
-<form action="" method="get">
-    <label for="nameInput">Nombre:</label>
-    <input type="text" id="nameInput" name="userName" placeholder="Introduce tu nombre">
-</form>
+    <form action="#" method="get">
+       
+        <div class="inputblock">
+            <label for="nameInput">Nombre:</label><br> <!-- En for ponemos lo que va en id -->
+            <input type="text" id="nameInput" name="userName" placeholder="Introduce tu nombre">
+            <!-- Lo que va en "name" llega al servidor como nombre de la variable -->
+        </div><br>
+        
+        <div class="inputblock">
+            <label for="apellido">Apellido:</label><br> 
+            <input type="text" id="apellido" name="userLastname" placeholder="Introduce tu apellido">
+        </div><br>
+
+        <div class="inputblock">
+            <label for="email">Email:</label><br> 
+            <input type="email" id="email" name="userEmail" placeholder="Introduce tu email">
+        </div><br>
+
+        <div class="inputblock">
+            <label for="passwordInput">Contraseña:</label><br> 
+            <input  maxlength="5" type="password" id="passwordInput" name="userEmail" placeholder="Introduce tu contraseña">
+        </div><br>
+
+        <div class="inputblock">
+            <label for="messageInput">Mensaje:</label><br> 
+            <textarea name="messageInput" id="messageInput" cols="30" rows="10" placeholder="Introduce tu mensaje"></textarea>
+        </div><br>
+
+        <div class="inputblock">
+            <label for="genreInput">Género:(*)</label><br>
+            <select required name="genreInput" id="genreInput">
+                <option value="" hidden></option>
+                <option value="female" disabled>Femenino</option>
+                <option value="male">Masculino</option>
+                <option value="other">Otro</option>
+            </select>
+        </div>
+        <br><br>
+
+        <div class="inputblock">
+            <label for="ageInput">Edad</label><br>
+            <input type="number" name="number" id="ageInput" min="0" max="120" placeholder="Edad">
+       
+        <label for="birthdayInput">Fecha de nacimeinto</label> 
+        <input type="date" id="birthdayInput" name="birthdayInput">
+        </div>
+        <!--Para poner como un predictivo en el listado-->
+        <div class="inputblock">
+            <label for="carBrandInput">La marca de tu coche</label>
+            <input type="text" id="carBrandInput" name="carBrand" list="carBrandList">
+            <datalist id="carBrandList">
+                <option value="bmw">BMW</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="mustang">Mustang</option>
+                <option value="ford">Ford</option>
+                <option value="Volkswagen">Volskwagen</option>
+            </datalist>
+        </div>
+<!--conjunto de campos, del estilo div-->
+        <fieldset><!--si ponemos disabled no deja escribir-->
+            <legend>Información de tu pareja</legend>
+            <div class="inputblock">
+                <label for="nameInput2">Nombre:</label><br> <!-- En for ponemos lo que va en id -->
+                <input type="text" id="nameInput2" name="userName" placeholder="Introduce tu nombre">
+                <!-- Lo que va en "name" llega al servidor como nombre de la variable -->
+            </div><br>
+            
+            <div class="inputblock">
+                <label for="apellido2">Apellido:</label><br> 
+                <input type="text" id="apellido2" name="userLastname" placeholder="Introduce tu apellido">
+            </div><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Estado Civil</legend>
+            <div>
+                <input type="radio" name="civilState" id="marriedInput">
+                <label for="marriedInput">casado</label>
+            </div>
+            <input type="radio" name="civilState" id="singleInput"><!--si ponemos checked sale siempre al inicio ese marcado-->
+            <label for="singleInput">soltero</label>
+            </div>
+            <div>
+            <input type="radio" name="civilState" id="divorcedInput">
+            <label for="divorcedInput">divorciado</label>
+            </div>
+        </fieldset>
+
+
+        <br><br>
+        <input type="submit" value="Guardar">
+
+    </form>
+
+
+
 
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
