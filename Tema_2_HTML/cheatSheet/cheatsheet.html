@@ -286,14 +286,50 @@
             <input type="radio" name="civilState" id="divorcedInput">
             <label for="divorcedInput">divorciado</label>
             </div>
-        </fieldset>
+            </fieldset>
+<!--checkbox-->
+            <fieldset>
+                <legend>Productos</legend>
+                <div>
+                    <input type="checkbox" name="iphoneProduct" id="iphoneProduct">
+                    <label for="iphoneProduct">Iphone</label>
+                </div>
+                <input type="checkbox" name="macProduct" id="macProduct"><!--si ponemos checked sale siempre al inicio ese marcado-->
+                <label for="macProduct">Mac Proo</label>
+                </div>
+                <div>
+                <input type="checkbox" name="airProduct" id="airProduct">
+                <label for="airProduct">Airpods</label>
+                </div>
+                </fieldset>
+    <!--Rango-->
+                <label for="rangeInput">Seleccione cantidad de elementos</label>
+                <input type="range" name="rangeInput" id="rangeInput">
+                <br>
+    <!--meter/Medidor-->
+                <label for="fuelLevel">Cantidad de gasolina</label>
+                <meter min="0" max="100" id="fuelLevel" value="60"></meter>
+                
+    <!--Progress/Progreso-->
+
+                <progress max="100" value="33">60</progress>
+
+                <br><br>
+
+                <label for="fileInput">Subir un archivo</label>
+                <input type="file" id="fileInput" name="fileInput">
+
+
 
 
         <br><br>
-        <input type="submit" value="Guardar">
+        <input type="submit" value="Guardar/Save">
+        <input type="reset" value="Vaciar/Clear">
+
 
     </form>
-
+<!-- multimedia-->
+<img src="images/tucan.jpeg" width="500" alt="">
 
 
 
